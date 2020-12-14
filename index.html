@@ -21,7 +21,10 @@
 <p id="cpu_core"></p>
 
 <button type="button" onclick='document.getElementById("net").innerHTML = "Hello JavaScript!"'>Click Me!</button>
-
+<script>
+const memory = navigator.deviceMemory
+document.getElementById("ram").innerHTML = `This device has at least  ${memory} GiB of RAM.`;
+</script>
 <script src="./app.js"></script>
 </body>
 </html>
