@@ -18,4 +18,4 @@ document.getElementById("demo").innerHTML = `This device has at least << ${memor
 //cpu core
 // gets the "available" logical processors count
 var logicalProcessorCount = navigator.hardwareConcurrency;
-document.getElementById("cpu_core").innerHTML = your Cpu_core:${logicalProcessorCount}Core`;
+document.getElementById("cpu_core").innerHTML = `your Cpu_core:${logicalProcessorCount}Core`;
