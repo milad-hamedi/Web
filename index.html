@@ -22,8 +22,12 @@
 
 <button type="button" onclick='document.getElementById("net").innerHTML = "Hello JavaScript!"'>Click Me!</button>
 <script>
+    //ram
 const memory = navigator.deviceMemory
 document.getElementById("ram").innerHTML = `This device has at least  ${memory} GiB of RAM.`;
+//cpu
+var logicalProcessorCount = navigator.hardwareConcurrency;
+document.getElementById("cpu_core").innerHTML = `your Cpu_core:${logicalProcessorCount}Core`;
 </script>
 <script src="./app.js"></script>
 </body>
