@@ -7,8 +7,8 @@ document.getElementById("demo").innerHTML = "My First JavaScript";
 
 
 const memory = navigator.deviceMemory
-console.log (`This device has at least ${memory}GiB of RAM.`)
-document.getElementById("demo").innerHTML = memory;
+
+document.getElementById("demo").innerHTML = `This device has at least ${memory}GiB of RAM.`;
 
 //------------------------------
 //online or offline
