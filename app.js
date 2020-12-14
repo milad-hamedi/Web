@@ -3,8 +3,8 @@
 document.getElementById("demo").innerHTML = "My First JavaScript";
 //------------------------------
 //ram
-const memory = navigator.deviceMemory
-document.getElementById("demo").innerHTML = `This device has at least  ${memory} GiB of RAM.`;
+//const memory = navigator.deviceMemory
+//document.getElementById("demo").innerHTML = `This device has at least  ${memory} GiB of RAM.`;
 //------------------------------
 //online or offline
  if(navigator.onLine === true)
