@@ -1,41 +1,47 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toolkit99</title>
 </head>
+
 <body>
     <h1>This Is My First Site</h1>
     <p>Best Site</p>
-<hr>
+    <hr>
 
-    <a href="https://soft98.ir/"target="_blabk">www.Soft98.ir</a>
+    <a href="https://soft98.ir/" target="_blabk">www.Soft98.ir</a>
     <br>
-    <a href="https://toplearn.com/"target="_blank">www.Toplearn.com</a>
+    <a href="https://toplearn.com/" target="_blank">www.Toplearn.com</a>
     <br>
-    <a href="http://dl.softgozar.com/Files/Software/ESET_Keys_Softgozar.com.txt?167318" target="_blank">UserName&Pass</a>
-    
-<hr>
-<p id="net"></p>
-<p id="ram"></p>
-<p id="cpu_core"></p>
+    <a href="http://dl.softgozar.com/Files/Software/ESET_Keys_Softgozar.com.txt?167318"
+        target="_blank">UserName&Pass</a>
 
-<button type="button" onclick='document.getElementById("net").innerHTML = "Hello JavaScript!"'>Click Me!</button>
-<script>
-    //net stste
-    if(navigator.onLine === true)
- {
- document.getElementById("net").innerHTML = `You are online`;
-   }
-     else
-   { document.getElementById("net").innerHTML = `offline`;}
-    //ram
-const memory = navigator.deviceMemory
-document.getElementById("ram").innerHTML = `This device has at least  ${memory} GiB of RAM.`;
-//cpu
-var logicalProcessorCount = navigator.hardwareConcurrency;
-document.getElementById("cpu_core").innerHTML = `your Cpu_core:${logicalProcessorCount}Core`;
-</script>
-<script src="./app.js"></script>
+    <hr>
+    <p id="net"></p>
+    <p id="ram"></p>
+    <p id="cpu_core"></p>
+
+    <button type="button" onclick='document.getElementById("net").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+    <script>
+        //========================================================================================= 
+        //net stste
+        if (navigator.onLine === true) {
+            document.getElementById("net").innerHTML = `Net State :  Online`;
+        }
+        else { document.getElementById("net").innerHTML = `Net State :  Offline`; }
+        //========================================================================================= 
+        //ram
+        const memory = navigator.deviceMemory
+        document.getElementById("ram").innerHTML = `This device has at least  ${memory} GiB of RAM.`;
+        //========================================================================================= 
+        //cpu
+        var logicalProcessorCount = navigator.hardwareConcurrency;
+        document.getElementById("cpu_core").innerHTML = `your Cpu_core:${logicalProcessorCount}Core`;
+        //=========================================================================================
+    </script>
+    <script src="./app.js"></script>
 </body>
+
 </html>
