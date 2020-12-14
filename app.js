@@ -22,4 +22,4 @@ else
 //cpu core
 // gets the "available" logical processors count
 var logicalProcessorCount = navigator.hardwareConcurrency;
-alert('your Cpu core:'+logicalProcessorCount+'Core');
+alert(`your Cpu core:${logicalProcessorCount}Core`);
