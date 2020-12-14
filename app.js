@@ -3,9 +3,12 @@
 document.getElementById("demo").innerHTML = "My First JavaScript";
 //------------------------------
 //ram
-var ram = navigator.deviceMemory;
-alert(`your Ram Size:${ram}GigaByte`);
-document.getElementById("demo").innerHTML = ram;
+
+
+
+const memory = navigator.deviceMemory
+console.log (`This device has at least ${memory}GiB of RAM.`)
+document.getElementById("demo").innerHTML = memory;
 
 //------------------------------
 //online or offline
