@@ -5,24 +5,16 @@ document.getElementById("demo").innerHTML = "My First JavaScript";
 //ram
 var ram = navigator.deviceMemory;
 alert(`your Ram Size:${ram}GigaByte`);
+document.getElementById("demo").innerHTML = ram;
 
 //------------------------------
 //online or offline
-if(navigator.onLine === true)
+/* if(navigator.onLine === true)
 	alert('You are online');
 else
-	alert('You are offline');
-
-
-// window.addEventListener('online', function() {
-// 	alert('Current status : online');
-// });
-
-// window.addEventListener('offline', function() {
-// 	alert('Current status : offline');
-// });
+	alert('You are offline'); */
 //-------------------------------
 //cpu core
 // gets the "available" logical processors count
-var logicalProcessorCount = navigator.hardwareConcurrency;
-alert(`your Cpu core:${logicalProcessorCount}Core`);
+/* var logicalProcessorCount = navigator.hardwareConcurrency;
+alert(`your Cpu core:${logicalProcessorCount}Core`); */
