@@ -35,6 +35,7 @@ window.addEventListener('load', function() {
     window.addEventListener('online',  updateOnlineStatus);
     window.addEventListener('offline', updateOnlineStatus);
   });
+  
 //-------------------------------
 //cpu core
 // gets the "available" logical processors count
