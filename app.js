@@ -1,6 +1,7 @@
 //------------------------------
 //ram
-var ram = navigator.deviceMemory
+var ram = navigator.deviceMemory;
+alert('your capacity ram:'+ram+'GigaByte');
 
 //------------------------------
 //online or offline
