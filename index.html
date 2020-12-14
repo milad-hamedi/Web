@@ -34,11 +34,11 @@
         //========================================================================================= 
         //ram
         const memory = navigator.deviceMemory
-        document.getElementById("ram").innerHTML = `This device has at least  ${memory} GiB of RAM.`;
+        document.getElementById("ram").innerHTML = `RAM : ${memory} GiB of RAM.`;
         //========================================================================================= 
         //cpu
         var logicalProcessorCount = navigator.hardwareConcurrency;
-        document.getElementById("cpu_core").innerHTML = `your Cpu_core:${logicalProcessorCount}Core`;
+        document.getElementById("cpu_core").innerHTML = `Cpu_core:${logicalProcessorCount}Core`;
         //=========================================================================================
     </script>
     <script src="./app.js"></script>
