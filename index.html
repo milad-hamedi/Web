@@ -18,12 +18,13 @@
     <a href="http://dl.softgozar.com/Files/Software/ESET_Keys_Softgozar.com.txt?167318" target="_blank">UserName&Pass</a>
 
     <hr>
+    <p id="note"></p>
     <p id="net"></p>
     <p id="ram"></p>
     <p id="cpu_core"></p>
     <p id="hdd"></p>
 
-    <button type="button" onclick='document.getElementById("net").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+    <button type="button" onclick='document.getElementById("note").innerHTML = "Hello M_H"'>Click Me!</button>
     <script>
         //========================================================================================= 
         //net stste
@@ -41,7 +42,7 @@
         document.getElementById("cpu_core").innerHTML = `Cpu : ${logicalProcessorCount}Core`;
         //=========================================================================================
         var div2=navigator.storage;
-        document.getElementById("hdd").innerHTML = `hdd : ${logicalProcessorCount}`;
+        document.getElementById("hdd").innerHTML = `hdd : ${div2}`;
 
     </script>
     <script src="./app.js"></script>
