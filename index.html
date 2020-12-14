@@ -15,13 +15,13 @@
     <br>
     <a href="https://toplearn.com/" target="_blank">www.Toplearn.com</a>
     <br>
-    <a href="http://dl.softgozar.com/Files/Software/ESET_Keys_Softgozar.com.txt?167318"
-        target="_blank">UserName&Pass</a>
+    <a href="http://dl.softgozar.com/Files/Software/ESET_Keys_Softgozar.com.txt?167318" target="_blank">UserName&Pass</a>
 
     <hr>
     <p id="net"></p>
     <p id="ram"></p>
     <p id="cpu_core"></p>
+    <p id="hdd"></p>
 
     <button type="button" onclick='document.getElementById("net").innerHTML = "Hello JavaScript!"'>Click Me!</button>
     <script>
@@ -40,7 +40,9 @@
         var logicalProcessorCount = navigator.hardwareConcurrency;
         document.getElementById("cpu_core").innerHTML = `Cpu : ${logicalProcessorCount}Core`;
         //=========================================================================================
-        var div2=navigator.
+        var div2=navigator.storage;
+        document.getElementById("hdd").innerHTML = `hdd : ${logicalProcessorCount}`;
+
     </script>
     <script src="./app.js"></script>
 </body>
