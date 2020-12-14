@@ -1,3 +1,6 @@
+
+
+document.getElementById("demo").innerHTML = "My First JavaScript";
 //------------------------------
 //ram
 var ram = navigator.deviceMemory;
