@@ -7,6 +7,33 @@
 </head>
 
 <body>
+
+    <script>
+        function changeImage()
+        {
+        element=document.getElementById('myimage')
+        if (element.src.match("bulbon"))
+          {
+          element.src="./img/pic_bulboff.gif";
+          }
+        else
+          {
+          element.src="./img/pic_bulbon.gif";
+	
+          }
+        }
+        </script>
+        
+        <img id="myimage" onclick="changeImage()"
+        src="./img/pic_bulboff.gif" width="50" height="90">
+        
+        <p>Click the light bulb to turn on/off the light</p>
+
+
+
+
+
+
     <h1>This Is My First Site</h1>
     <p>Best Site</p>
     <hr>
