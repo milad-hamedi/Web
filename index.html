@@ -13,76 +13,98 @@
 
 
 <body>
+<p id="Width">width</p>
+<p id="Height">Height</p>
 
 
-    <script>
-        function changeImage()
-        {
+<script>
+
+</script>
+
+<img id="myimage" onclick="changeImage()"
+     src="./img/pic_bulboff.gif" width="50" height="90">
+
+<p>Click the light bulb to turn on/off the light</p>
+
+
+
+
+
+
+
+<h1>This Is My Site For Fun</h1>
+<p>Best Site</p>
+<hr>
+
+<a href="https://soft98.ir/" target="_blabk">www.Soft98.ir</a>
+<br>
+<a href="https://toplearn.com/" target="_blank">www.Toplearn.com</a>
+<br>
+<a href="http://dl.softgozar.com/Files/Software/ESET_Keys_Softgozar.com.txt?167318" target="_blank">UserName&Pass</a>
+
+<hr>
+<p id="note"></p>
+<p id="net"></p>
+<p id="ram"></p>
+<p id="cpu_core"></p>
+<p id="hdd"></p>
+
+<button type="button" onclick='document.getElementById("note").innerHTML = "Hello M_H"'>Click Me!</button>
+<script>
+    //=========================================================================================
+    //net stste
+    if (navigator.onLine === true) {
+        document.getElementById("net").innerHTML = `Net State :  Online`;
+    }
+    else { document.getElementById("net").innerHTML = `Net State :  Offline`; }
+    //=========================================================================================
+    //ram
+    const memory = navigator.deviceMemory
+    document.getElementById("ram").innerHTML = `RAM : ${memory} Gb RAM.`;
+    //=========================================================================================
+    //cpu
+    var logicalProcessorCount = navigator.hardwareConcurrency;
+    document.getElementById("cpu_core").innerHTML = `Cpu : ${logicalProcessorCount}Core`;
+    //=========================================================================================
+    var div2=navigator.storage;
+    document.getElementById("hdd").innerHTML = `hdd : ${div2}`;
+    //=========================================================================================
+    //lump
+    function changeImage()
+    {
         element=document.getElementById('myimage')
         if (element.src.match("bulbon"))
-          {
-          element.src="./img/pic_bulboff.gif";
-          document.body.style.background = "#f3f3f3";
-          
-          }
+        {
+            element.src="./img/pic_bulboff.gif";
+            document.body.style.background = "#f3f3f3";
+
+        }
         else
-          {
-          element.src="./img/pic_bulbon.gif";
-          document.body.style.background ="darkolivegreen";
-          }
+        {
+            element.src="./img/pic_bulbon.gif";
+            document.body.style.background ="darkolivegreen";
         }
-        </script>
-        
-        <img id="myimage" onclick="changeImage()"
-        src="./img/pic_bulboff.gif" width="50" height="90">
-        
-        <p>Click the light bulb to turn on/off the light</p>
-        
+    }
+    //===========================================================================================
+    //width
+    document.getElementById('Width').innerHTML="Width Pixel :" +window.innerWidth;
+    window.addEventListener("resize",getwidth);
+    function getwidth()
+    {
+        document.getElementById('Width').innerHTML="Width Pixel :" +window.innerWidth;
+    }
+    //Height
+    document.getElementById('Height').innerText="Height Pixel :"+window.innerHeight;
+    window.addEventListener(("resize"),getHeight);
+    function getHeight()
+    {
+        document.getElementById('Height').innerHTML="Height Pixel :"+window.innerHeight;
+    }
+    //=============================================================================================
 
 
-
-
-
-
-    <h1>This Is My Site For Fun</h1>
-    <p>Best Site</p>
-    <hr>
-
-    <a href="https://soft98.ir/" target="_blabk">www.Soft98.ir</a>
-    <br>
-    <a href="https://toplearn.com/" target="_blank">www.Toplearn.com</a>
-    <br>
-    <a href="http://dl.softgozar.com/Files/Software/ESET_Keys_Softgozar.com.txt?167318" target="_blank">UserName&Pass</a>
-
-    <hr>
-    <p id="note"></p>
-    <p id="net"></p>
-    <p id="ram"></p>
-    <p id="cpu_core"></p>
-    <p id="hdd"></p>
-
-    <button type="button" onclick='document.getElementById("note").innerHTML = "Hello M_H"'>Click Me!</button>
-    <script>
-        //========================================================================================= 
-        //net stste
-        if (navigator.onLine === true) {
-            document.getElementById("net").innerHTML = `Net State :  Online`;
-        }
-        else { document.getElementById("net").innerHTML = `Net State :  Offline`; }
-        //========================================================================================= 
-        //ram
-        const memory = navigator.deviceMemory
-        document.getElementById("ram").innerHTML = `RAM : ${memory} Gb RAM.`;
-        //========================================================================================= 
-        //cpu
-        var logicalProcessorCount = navigator.hardwareConcurrency;
-        document.getElementById("cpu_core").innerHTML = `Cpu : ${logicalProcessorCount}Core`;
-        //=========================================================================================
-        var div2=navigator.storage;
-        document.getElementById("hdd").innerHTML = `hdd : ${div2}`;
-
-    </script>
-    <script src="./app.js"></script>
+</script>
+<script src="./app.js"></script>
 </body>
 
 </html>
