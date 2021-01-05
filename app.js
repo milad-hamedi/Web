@@ -57,4 +57,13 @@ function goforward()
 {
     window.history.forward();
 }
+//==============================================================================================
+//clock
+var myclock=setInterval(clock,1000);
+function clock()
+{
+    let d=new Date();
+    document.getElementById('clock').innerHTML=d.toLocaleTimeString();
+}
+//===============================================================================================
 
