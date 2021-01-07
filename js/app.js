@@ -66,4 +66,12 @@ function clock()
     document.getElementById('clock').innerHTML=d.toLocaleTimeString();
 }
 //===============================================================================================
+//get_os
+function get_os()
+{
+    var parser = new UAParser();
+    parser.setUA(window.navigator.userAgent);
+    var result = parser.getResult();
+    document.getElementById('os').innerHTML = result.os.name + " version " + result.os.version;
+}
 

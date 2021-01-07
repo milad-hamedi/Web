@@ -9,6 +9,7 @@
             background-color:rgb(77, 77, 77);
         }
     </style>
+
 </head>
 
 
@@ -50,13 +51,17 @@
 <p id="ram"></p>
 <p id="cpu_core"></p>
 <p id="hdd"></p>
+Operating System :<button onclick="get_os()">Get-os</button>
+<p id="os"></p>
 
 <button type="button" onclick='document.getElementById("note").innerHTML = "Wellcome To My Site"'>Click Me!</button>
 <hr>
 <button onclick="goback()">Go Back</button>
 <button onclick="goforward()">Go Forward</button>
 
-<script src="./app.js"></script>
+
 </body>
+<script src="js/app.js"></script>
+<script src="js/ua-parser.min.js"></script>
 
 </html>
