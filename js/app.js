@@ -6,8 +6,8 @@ if (navigator.onLine === true) {
 else { document.getElementById("net").innerHTML = `Net State :  Offline`; }
 //=========================================================================================
 //ram
-const memory = navigator.deviceMemory
-document.getElementById("ram").innerHTML = `RAM : ${memory} Gb RAM.`;
+const memory = window.navigator.deviceMemory;
+document.getElementById("ram").innerHTML = `RAM : ${memory} Gb.`;
 //=========================================================================================
 //cpu
 var logicalProcessorCount = navigator.hardwareConcurrency;
