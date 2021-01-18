@@ -6,16 +6,14 @@ if (navigator.onLine === true) {
 else { document.getElementById("net").innerHTML = `Net State :  Offline`; }
 //=========================================================================================
 //ram
-const memory = window.navigator.deviceMemory;
+let memory = window.navigator.deviceMemory;
 document.getElementById("ram").innerHTML = `RAM : ${memory} Gb.`;
 //=========================================================================================
 //cpu
 var logicalProcessorCount = navigator.hardwareConcurrency;
 document.getElementById("cpu_core").innerHTML = `Cpu : ${logicalProcessorCount}Core`;
 //=========================================================================================
-var div2=navigator.storage;
-document.getElementById("hdd").innerHTML = `hdd : ${div2}`;
-//=========================================================================================
+
 //lump
 function changeImage()
 {
@@ -67,11 +65,13 @@ function clock()
 }
 //===============================================================================================
 //get_os
+
 function get_os()
 {
     var parser = new UAParser();
     parser.setUA(window.navigator.userAgent);
     var result = parser.getResult();
     document.getElementById('os').innerHTML = result.os.name + " version " + result.os.version;
+
 }
 

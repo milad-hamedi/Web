@@ -13,7 +13,7 @@
 </head>
 
 
-<body>
+<body onload="get_os()">
 <p id="clock">Clock</p>
 <a href="contactUs.html">Contact Us</a>
 <br>
@@ -50,9 +50,7 @@
 <p id="net"></p>
 <p id="ram"></p>
 <p id="cpu_core"></p>
-<p id="hdd"></p>
-Operating System :<button onclick="get_os()">Get-os</button>
-<p id="os"></p>
+Operating System :<p id="os" ></p>
 
 
 <button type="button" onclick='document.getElementById("note").innerHTML = "Wellcome To My Site"'>Click Me!</button>
